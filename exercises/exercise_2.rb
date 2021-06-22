@@ -5,11 +5,11 @@ puts "Exercise 2"
 puts "----------"
 
 @store1 = Store.find_by(id: '1')
-puts "store1 #{@store1}"
+puts "store1 #{@store1.name}"
 @store1.name = "Coquitlam"
 @store1.save
 puts "*** store1 after updating"
-puts "#{@store1}"
+puts "#{@store1.name}"
 
 @store2 = Store.find_by(id: '2')
 puts "store2 #{@store2}"
